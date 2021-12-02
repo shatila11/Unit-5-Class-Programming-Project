@@ -49,7 +49,15 @@ System.out.println(""); //Creating White Space
 
   //Comparing if our phones are made by the same brand -- Using .equals method
   System.out.println(""); //Creating White Space
-  System.out.println("Is our phones made by the same brand?" +my.equals(cp));
+  System.out.println("Is our phones made by the same brand?");
+  if (my.equals(cp) == true)
+  {
+    System.out.println("Wow! Our phones are both made by " + br +"!");
+  }
+  else
+  {
+    System.out.println("NO! Our phones are not made by the same brand");
+  }
 
   }
 }
