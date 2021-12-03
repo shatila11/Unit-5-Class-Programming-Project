@@ -3,7 +3,7 @@ import static java.lang.System.*;
 import java.util.*;
 class Main {
   public static void main(String[] args) {
-    Scanner it = new Scanner(System.in);
+  Scanner it = new Scanner(System.in);
     
   //Creating Default Phone
   cellPhone cp = new cellPhone();
@@ -49,7 +49,7 @@ System.out.println(""); //Creating White Space
 
   //Comparing if our phones are made by the same brand -- Using .equals method
   System.out.println(""); //Creating White Space
-  System.out.println("Is our phones made by the same brand?");
+  System.out.println("Are our phones made by the same brand?");
   if (my.equals(cp) == true)
   {
     System.out.println("Wow! Our phones are both made by " + br +"!");
@@ -58,6 +58,19 @@ System.out.println(""); //Creating White Space
   {
     System.out.println("NO! Our phones are not made by the same brand");
   }
+  System.out.println(""); //Creating White Space
+  System.out.println(""); //Creating White Space
+
+  //Guesses the Price of the Phone based on the year
+  System.out.println("Let me guess your phone price: ");
+  String answer = cp.price(y);
+  System.out.print(answer);
+  System.out.println("\n");
+
+   System.out.println("Let's download some additional apps onto your phone.  How many would you like to add?");
+      cp.additionalApps(it.nextInt());
+      System.out.println("Here is your updated phone information:");
+      System.out.println(cp);
 
   }
 }

@@ -11,6 +11,7 @@ public class cellPhone
   private int battery;
   private int appCount;
 
+
  
   //Constructor -- Has Variables
   public cellPhone(String n, String c, int m, int b, int a)
@@ -22,7 +23,6 @@ public class cellPhone
     setBattery(b);
     setAppCount(a);
   }
-
 
 
 
@@ -91,7 +91,29 @@ return true;
   }
 }
 
+//Guess Price of Phone
+    public String price(int x) {
+        String answer = "";
+        setYearModel(x);
+        if (yearModel < 2010) {
+            answer = "Worthless";
+        } else if (yearModel < 2013 && yearModel >= 2010) {
+            answer = "About $100";
+        } else if (yearModel < 2016 && yearModel >= 2013) {
+            answer = "About $200";
+        } else if (yearModel < 2019 && yearModel >= 2016) {
+            answer = "About $400";
+        } else if (yearModel < 2022 && yearModel >= 2019) {
+            answer = "About $600";
+        }
+        return answer;
 
+    }
+
+    public int additionalApps(int extraApps) {
+        int totalApps = appCount += extraApps;
+        return totalApps;
+    }
 
 
 
@@ -104,3 +126,5 @@ return true;
     return str; //need to return a String
   }
 }
+
+
