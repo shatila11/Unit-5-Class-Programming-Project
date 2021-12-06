@@ -1,4 +1,4 @@
-public class cellPhone
+public class CellPhone
 
 
 {
@@ -8,13 +8,13 @@ public class cellPhone
   private String name;
   private String brand;
   private int yearModel;
-  private int battery;
+  private double battery;
   private int appCount;
 
 
  
   //Constructor -- Has Variables
-  public cellPhone(String n, String c, int m, int b, int a)
+  public CellPhone(String n, String c, int m, double b, int a)
   //Paramaters for my Constructor
   {
     setName(n);
@@ -27,9 +27,9 @@ public class cellPhone
 
 
 //Creating a Default Constructor 
-public cellPhone()
+public CellPhone()
 {
-  this("The Phone Name was not Provided","The Brand Name Was not Provided",2021,100, 0);
+  this("The Phone Name was not Provided","The Brand Name Was not Provided",2021,100.0, 0);
 }
 
  //Accesor Methods
@@ -45,7 +45,7 @@ public cellPhone()
  {
    return yearModel;
  }
- public int getBattery()
+ public double getBattery()
  {
    return battery;
  }
@@ -66,7 +66,7 @@ brand=u;
  {
 yearModel=q;
  }
-  public void setBattery(int e)
+  public void setBattery(double e)
  {
 battery=e;
  }

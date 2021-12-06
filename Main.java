@@ -6,9 +6,9 @@ class Main {
   Scanner it = new Scanner(System.in);
     
   //Creating Default Phone
-  cellPhone cp = new cellPhone();
+  CellPhone cp = new CellPhone();
   //Creaing My Phone - For Comparison Later
-  cellPhone my = new cellPhone("iPhone 12 Pro Max", "Apple", 2020, 94, 41);
+  CellPhone my = new CellPhone("iPhone 12 Pro Max", "Apple", 2020, 94, 41);
 System.out.println("Hello and Welcome to the Phone Compare Game. Let's get started!");
 System.out.println(""); //Creating White Space
 
@@ -35,7 +35,7 @@ System.out.println(""); //Creating White Space
 
     //Setting the Users Battery Percentage
     System.out.println("What is your current battery percentage?");
-    int p = it.nextInt();
+    double p = it.nextDouble();
     cp.setBattery(p);
 
     //Setting the Amount of Apps the User Has 
